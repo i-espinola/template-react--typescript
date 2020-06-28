@@ -1,0 +1,88 @@
+{
+  "name": "template-react-typescript",
+  "version": "0.1.0",
+  "private": false,
+  "main": "server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-espinola/template-react-typescript.git"
+  },
+  "keywords": [
+    "react-typescript"
+  ],
+  "author": "Ivan Espinola G.- <ivan.espinola@live.com>",
+  "license": "SEE LICENSE IN <https://github.com/i-espinola/template-react-typescript/LICENSE>",
+  "bugs": {
+    "url": "https://github.com/i-espinola/template-react-typescript/issues"
+  },
+  "readme": "https://github.com/i-espinola/template-react-typescript#readme",
+  "homepage": ".",
+  "scripts": {
+    "start": "node server/index.js",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "dev:server": "ts-node-dev --respawn --transpileOnly server/index.js",
+    "dev": "react-scripts start",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
+    "format": "prettier --write src/**/*.{ts,tsx,scss,css,json}",
+    "clean": "del ./build ./package-lock.json ./npm-debug.log ./yarn.lock",
+    "build": "react-scripts build",
+    "build:format": "npm run format && npm run lint && react-scripts build"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "@types/express": "^4.17.6",
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "body-parser": "*",
+    "express": "*",
+    "express-favicon": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-scripts": "*",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "ts-node-dev": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "babel-eslint": "*",
+    "del-cli": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-config-airbnb-typescript": "*",
+    "eslint-config-prettier": "*",
+    "eslint-config-react-app": "*",
+    "eslint-import-resolver-typescript": "*",
+    "eslint-loader": "*",
+    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
+    "prettier": "*",
+    "prettier-eslint": "*",
+    "prettier-eslint-cli": "*"
+  },
+  "optionalDependencies": {},
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
